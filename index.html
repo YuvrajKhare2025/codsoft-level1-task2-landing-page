@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Landing Page | Yuvraj</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav>
+    <h2>YuvrajTech</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <h1>Build Your Digital Presence</h1>
+    <p>Modern landing page with clean UI, animations and responsive design.</p>
+    <button onclick="scrollToSection('features')">Get Started</button>
+  </header>
+
+  <section id="features" class="reveal">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">🚀 Fast Performance</div>
+      <div class="card">📱 Mobile Friendly</div>
+      <div class="card">🎨 Modern UI</div>
+    </div>
+  </section>
+
+  <section id="services" class="reveal">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">Web Development</div>
+      <div class="card">UI/UX Design</div>
+      <div class="card">AI Tools Integration</div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Yuvraj Tech. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
